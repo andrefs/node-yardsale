@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{-this.title}}</title>
+
+        <!-- load Ink's css from the cdn -->
+        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.7/css/ink-flex.min.css">
+        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.7/css/font-awesome.min.css">
+
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+        <!-- load local CSS files -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <!-- test browser flexbox support and load legacy grid if unsupported -->
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.7/js/modernizr.js"></script>
+        <script type="text/javascript">
+            Modernizr.load({
+              test: Modernizr.flexbox,
+              nope : 'http://cdn.ink.sapo.pt/3.1.7/css/ink-legacy.min.css'
+            });
+        </script>
+
+        <!-- load Ink's javascript files from the cdn -->
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.7/js/holder.js"></script>
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.7/js/ink-all.min.js"></script>
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.7/js/autoload.js"></script>
+        <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+        <!-- Magnific Popup core JS file -->
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <!-- load local JS files -->
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </head>
+    <body>
+        <div class="content xlarge-80 all-95 push-center">
+                <header>
+                    <div class="header-title">
+                        <h1>{{-this.title}}</h1>
+                    </div>
+                    <div class="header-info">
+                        <ul>
+                            <li>Mais informações: <a href="mailto:andrefs@andrefs.com">andrefs@andrefs.com</a></li>
+                            <li>Levantamento na zona do Saldanha, Lisboa</li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="ink-grid">
+                <div class="column-group half-gutters">
+                    {{for item in this.items :}}
+                    <div class="xlarge-50 all-100">
+                        <div class="item" data-id="{{-item.ID}}">
+                            <div class="item-header">
+                                <div class="price-info ink-tooltip" data-tip-text="Preço original: {{-(item.CurrentPrice || item.Purchase.Price)}}€" data-tip-where="left" data-tip-color="orange">
+                                    <span class="id">#{{-item.ID}}</span>
+                                    <span class="price">{{-item.SellingPrice}}€</span>
+                                </div>
+                                <h3 class="title">{{-item.Name}}</h3>
+                            </div>
+                            <div class="item-body">
+                                <div class="item-info">
+                                        <p>
+                                            <h5>Items</h5>
+                                            <ul>
+                                            {{for piece in item.OriginalItems :}}
+                                                {{if piece.ClosestURL :}}
+                                                    <li class="ink-tooltip" data-tip-text="Item similar" data-tip-color="red"><a href="{{-piece.ClosestURL}}">{{-piece.Description}}</a> (descontinuado)</li>
+                                                {{else if piece.URL :}}
+                                                    <li><a href="{{-piece.URL}}">{{-piece.Description}}</a></li>
+                                                {{else :}}
+                                                    <li>{{-piece.Description}}</li>
+                                                {{end}}
+                                            {{end}}
+                                            </ul>
+                                        </p>
+                                        {{if item.Dimensions :}}
+                                        <p>
+                                            <h5>Dimensões</h5>
+                                            <ul>
+                                            {{for own key, value of item.Dimensions :}}
+                                            <li>{{-key}}: {{-value}}</li>
+                                            {{end}}
+                                            </ul>
+                                        </p>
+                                        {{end}}
+                                </div>
+                                <div class="thumbs-container">
+                                    <ul class="thumbs">
+                                {{if item.Images :}}
+                                    {{for image in item.Images :}}
+                                    <li class="thumb"><a href="{{-image.URL}}"><img src="{{-image.URL}}"/></a></li>
+                                    {{end}}
+                                {{end}}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+                </div>
+        </div>
+
+
+
+<div class="ink-shade fade">
+    <div id="imgModal" data-width="95%" data-height="95%">
+        <div class="modal-header">
+            <button class="modal-close ink-dismiss"></button>
+            <h2 id="modal-title">This is the modal header</h2>
+        </div>
+        <div class="modal-body" id="modalContent">
+            <h3>This is the modal content</h3>
+            <figure class="ink-image">
+                <img src="http://lorempixel.com/1200/675/sports/1" alt="" class="ink-image">
+            </figure>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

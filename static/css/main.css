@@ -1,0 +1,115 @@
+
+html, body {
+}
+
+div.content .ink-grid {
+    padding: 0;
+}
+
+div.content header {
+    margin: 1em 0;
+}
+
+div.content header > div.header-title{
+    padding: 5px;
+    background-color: #388872;
+}
+div.content header > div.header-title > h1{
+    color: white;
+    text-align: center;
+    margin: 0.5em;
+    color: white;
+}
+div.content header > div.header-info {
+    padding: 5px;
+    background-color: #C7D5D1;
+    margin-top: -1em;
+}
+div.content header > div.header-info > ul {
+    list-style: none;
+}
+
+div.item {
+    background-color: #C7D5D1;
+    position: relative;
+    min-height: 200px;
+}
+div.item .item-header {
+    padding: 5px;
+}
+
+div.item .item-info {
+    padding-left: 50px;
+}
+div.item .item-info h5 {
+    margin-bottom: 0;
+}
+div.item .item-info ul {
+    list-style: none;
+    margin: 0.2em;
+}
+div.item .item-info ul > li {
+    margin: 0;
+}
+div.item .item-body {
+    padding: 5px;
+}
+
+div.item .title {
+    margin-left: 150px;
+    line-height: 40px;
+}
+
+div.price-info {
+    position: absolute;
+    background-color: #388872;
+    color: white;
+    font-weight: bold;
+    float: left;
+    top: 0;
+    left: 0;
+    margin: 5px 0 0 5px;
+    font-size: 40px;
+    width: 125px;
+    text-align: center;
+}
+div.price-info > span.price {
+    margin-left: 20px;
+    line-height: 40px;
+}
+div.price-info > span.id {
+    text-align: center;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    float: left;
+    left: 0;
+    width: 58px;
+    position: absolute;
+    font-size: 15px;
+    height: 20px;
+	transform: rotate(-90deg);
+	transform-origin: right top 0;
+    margin-left: -58px;
+}
+
+div.item div.thumbs-container {
+    overflow: hidden;
+    height: 70px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+}
+div.item ul.thumbs {
+    list-style: none;
+    width: 2000px;
+    padding: 0px;
+    margin: 0px;
+}
+div.item ul.thumbs li.thumb {
+    width: 70px;
+    float:left;
+    margin: 2px;
+}
+
+

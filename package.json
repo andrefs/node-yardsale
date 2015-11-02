@@ -1,0 +1,16 @@
+{
+  "name": "yardsale",
+  "version": "0.0.1",
+  "description": "Micro website for listing stuff you want to sell",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "André Santos",
+  "license": "ISC",
+  "dependencies": {
+    "diet": "^0.9.22",
+    "diet-ect": "^1.0.0",
+    "diet-static": "^2.2.0"
+  }
+}
