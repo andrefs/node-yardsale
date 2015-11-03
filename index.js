@@ -20,7 +20,7 @@ app.footer(static);
 // from every route with the `$.html()` method
 app.get('/', function($){
    // Set a template variable
-   $.data.title = 'Feirão de André Santos';
+   $.data.title = 'Feirão da Casa d\'A Praia';
    $.data.items = items;
 
    // Now serve the html file 
