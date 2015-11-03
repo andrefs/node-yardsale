@@ -29,7 +29,16 @@ exports.items = [
             Seller: 'IKEA'
         },
         SellingPrice: 80,
+        Dimensions: {
+            'Comprimento'            : '209cm',
+            'Largura'                : '176cm',
+            'Comprimento do colchão' : '200cm',
+            'Largura do colchão'     : '160cm',
+        },
         Images: [
+            {URL: 'imgs/001_001.JPG'},
+            {URL: 'imgs/001_002.JPG'},
+            {URL: 'imgs/001_003.JPG'},
             {URL: 'imgs/001_011.JPG'},
             {URL: 'imgs/001_012.JPG'},
             {URL: 'imgs/001_013.JPG'},
@@ -122,6 +131,11 @@ exports.items = [
             Price: 89.99,
             Seller: 'IKEA'
         },
+        Images: [
+            {URL: 'imgs/004_001.JPG'},
+            {URL: 'imgs/004_002.JPG'},
+            {URL: 'imgs/004_003.JPG'},
+        ],
         SellingPrice: 25,
     },
     {
@@ -167,6 +181,8 @@ exports.items = [
         SellingPrice: 25,
         Images: [
             {URL: 'imgs/005_001.JPG'},
+            {URL: 'imgs/005_002.JPG'},
+            {URL: 'imgs/005_003.JPG'},
         ]
     },
     {
@@ -178,6 +194,7 @@ exports.items = [
                 Name: 'SULTAN FAVANG',
                 Description: 'Colchão',
                 URL: 'http://www.ikea.com/pt/pt/catalog/products/90139804/',
+                ClosestURL: 'http://www.ikea.com/pt/pt/catalog/products/80272252/',
                 Price: 199,
             }
         ],
@@ -185,6 +202,11 @@ exports.items = [
             Date: '2013-02-01',
             Price: 199,
             Seller: 'IKEA'
+        },
+        Dimensions: {
+            'Comprimento' : '200cm',
+            'Largura'     : '160cm',
+            Espessura: '14cm',
         },
         SellingPrice: 60,
     },

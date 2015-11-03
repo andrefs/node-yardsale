@@ -2,6 +2,22 @@
 html, body {
 }
 
+a {
+    color: #236936;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    color: #094419;
+    font-weight: bold;
+    text-decoration: none;
+}
+li.discontinued a {
+    color:  #988621;
+}
+li.discontinued a:hover {
+    color: #65570B;
+}
 div.content .ink-grid {
     padding: 0;
 }
@@ -23,7 +39,6 @@ div.content header > div.header-title > h1{
 div.content header > div.header-info {
     padding: 5px;
     background-color: #C7D5D1;
-    margin-top: -1em;
 }
 div.content header > div.header-info > ul {
     list-style: none;

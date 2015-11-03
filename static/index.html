@@ -66,9 +66,15 @@
                                             <ul>
                                             {{for piece in item.OriginalItems :}}
                                                 {{if piece.ClosestURL :}}
-                                                    <li class="ink-tooltip" data-tip-text="Item similar" data-tip-color="red"><a href="{{-piece.ClosestURL}}">{{-piece.Description}}</a> (descontinuado)</li>
+                                                <li class="ink-tooltip discontinued" data-tip-text="Item similar" data-tip-color="red">
+                                                {{if piece.Quantity :}}{{-piece.Quantity}} x {{end}}
+                                                    <a href="{{-piece.ClosestURL}}">{{-piece.Description}}</a> (descontinuado)
+                                                </li>
                                                 {{else if piece.URL :}}
-                                                    <li><a href="{{-piece.URL}}">{{-piece.Description}}</a></li>
+                                                <li>
+                                                {{if piece.Quantity :}}{{-piece.Quantity}} x {{end}}
+                                                    <a href="{{-piece.URL}}">{{-piece.Description}}</a>
+                                                </li>
                                                 {{else :}}
                                                     <li>{{-piece.Description}}</li>
                                                 {{end}}
