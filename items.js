@@ -104,14 +104,25 @@ exports.items = [
                 URL: 'http://www.ikea.com/pt/pt/catalog/products/10103088/',
                 ClosestURL: 'http://www.ikea.com/pt/pt/catalog/products/S69123070',
                 Price: 49.99,
+            },{
+                Name: 'KALLAX',
+                Description: 'Acessório c/porta',
+                URL: "http://www.ikea.com/pt/pt/catalog/products/60278170",
+                Price: 10,
+            },{
+                Name: 'KALLAX',
+                Description: "Acessório c/2 gavetas",
+                URL: "http://www.ikea.com/pt/pt/catalog/products/90286649",
+                Price: 15,
+                Quantity: 2,
             }
         ],
         Purchase : {
             Date: '2013-02-01',
-            Price: 49.99,
+            Price: 89.99,
             Seller: 'IKEA'
         },
-        SellingPrice: 20,
+        SellingPrice: 25,
     },
     {
         ID: '005',
@@ -130,14 +141,30 @@ exports.items = [
                 Description: 'Estante 4x1',
                 URL: 'http://www.ikea.com/pt/pt/catalog/products/40275846/',
                 Price: 39.99,
+            },{
+                Name: 'KALLAX',
+                Description: 'Acessório c/porta',
+                URL: "http://www.ikea.com/pt/pt/catalog/products/60278170",
+                Price: 10,
+                Quantity: 2,
+            },{
+                Name: 'KALLAX',
+                Description: "Acessório c/2 gavetas",
+                URL: "http://www.ikea.com/pt/pt/catalog/products/90286649",
+                Price: 15,
+            },{
+                Name: 'DRONA',
+                Description: "Caixa",
+                URL:"http://www.ikea.com/pt/pt/catalog/products/30219281/",
+                Price: 3.99,
             }
         ],
         Purchase : {
             Date: '2014-11-01',
-            Price: 39.99,
+            Price: 78.98,
             Seller: 'IKEA'
         },
-        SellingPrice: 15,
+        SellingPrice: 25,
         Images: [
             {URL: 'imgs/005_001.JPG'},
         ]
