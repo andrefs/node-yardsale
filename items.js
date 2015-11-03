@@ -222,6 +222,34 @@ exports.items = [
             {URL: 'imgs/007_002.JPG'},
             {URL: 'imgs/007_003.JPG'},
         ]
+    },
+    {
+        ID: '008',
+        Type: 'Poltrona',
+        Name: 'Poltrona POANG',
+        Color: 'Preto',
+        OriginalItems: [{
+                Name: 'POANG',
+                Description: 'Poltrona',
+                URL: 'http://www.ikea.com/pt/pt/catalog/products/S09090181/',
+                Price: 99,
+            }
+        ],
+        Dimensions: {
+            'Profundidade'            : '82cm',
+            'Largura do assento'      : '56cm',
+            'Profundidade do assento' : '50cm',
+            'Altura do assento'       : '42cm',
+            'Altura'                  :'100cm',
+            'Largura'                 : '68cm',
+        },
+        CurrentPrice: 99,
+        SellingPrice: 20,
+        Images: [
+            {URL: 'imgs/008_001.JPG'},
+            {URL: 'imgs/008_002.JPG'},
+            {URL: 'imgs/008_003.JPG'},
+        ]
     }
 ];
 
