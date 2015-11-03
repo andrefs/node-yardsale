@@ -2,7 +2,7 @@
 var server = require('diet')    // Require Diet
 var app = server() // Create App
 var items = require('./items').items;
-app.listen(8000)   // Configure Domain
+app.listen(17323)   // Configure Domain
 
 // Require ECT
 var ect    = require('diet-ect')({ path: app.path+'/static' })
