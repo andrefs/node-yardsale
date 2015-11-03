@@ -218,7 +218,7 @@ exports.items = [
         CurrentPrice: 45,
         SellingPrice: 15,
         Images: [
-            {URL: 'imgs/005_001.JPG'},
+            {URL: 'imgs/007_001.JPG'},
             {URL: 'imgs/007_002.JPG'},
             {URL: 'imgs/007_003.JPG'},
         ]
