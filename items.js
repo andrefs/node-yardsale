@@ -100,6 +100,8 @@ exports.items = [
             {URL: 'imgs/003_001.JPG'},
             {URL: 'imgs/003_002.JPG'},
             {URL: 'imgs/003_003.JPG'},
+            {URL: 'imgs/003_004.JPG'},
+            {URL: 'imgs/003_005.JPG'},
         ]
     },
     {
@@ -183,6 +185,7 @@ exports.items = [
             {URL: 'imgs/005_001.JPG'},
             {URL: 'imgs/005_002.JPG'},
             {URL: 'imgs/005_003.JPG'},
+            {URL: 'imgs/005_004.JPG'},
         ]
     },
     {
@@ -271,6 +274,8 @@ exports.items = [
             {URL: 'imgs/008_001.JPG'},
             {URL: 'imgs/008_002.JPG'},
             {URL: 'imgs/008_003.JPG'},
+            {URL: 'imgs/008_004.JPG'},
+            {URL: 'imgs/008_005.JPG'},
         ]
     }
 ];
