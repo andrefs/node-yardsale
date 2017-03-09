@@ -9,7 +9,7 @@
   "author": "André Santos",
   "license": "ISC",
   "dependencies": {
-    "diet": "^0.9.22",
+    "diet": "^0.15.0",
     "diet-ect": "^1.0.0",
     "diet-static": "^2.2.0"
   }
